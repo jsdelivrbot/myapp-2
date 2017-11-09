@@ -131,7 +131,7 @@ module.exports = {
           // smaller than specified limit in bytes as data URLs to avoid requests.
           // A missing `test` is equivalent to a match.
           {
-            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/],
+            test: [/\.bmp$/, /\.gif$/, /\.jpe?g$/, /\.png$/, /\.svg/],
             loader: require.resolve('url-loader'),
             options: {
               limit: 10000,
@@ -180,6 +180,8 @@ module.exports = {
                         'last 4 versions',
                         'Firefox ESR',
                         'not ie < 9', // React doesn't support IE8 anyway
+                        "iOS >= 7",
+                        "Android > 4.1",
                       ],
                       flexbox: 'no-2009',
                     }),
