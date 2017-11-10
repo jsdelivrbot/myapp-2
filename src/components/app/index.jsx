@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import { Framework7App, Statusbar, Views, View, Pages, Link, Page,PageContent} from 'framework7-react';
 import routes from '../../routes.js';
 import Home from '../pages/home';
-import Login from '../pages/login'
+import Login from '../pages/login';
+import Footer from '../common/footer';
 
 // The both Framework7 and Dom7 are exposed in window.*
 import 'framework7';
@@ -21,6 +22,7 @@ export default class App extends Component {
         <Pages>
           <Home/>
         </Pages>
+        <Footer/>
       </View>
       <Login/>
     </Views>
