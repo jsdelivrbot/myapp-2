@@ -1,0 +1,20 @@
+.page-content-home{
+  .swiper-container{
+    height: 3rem;
+    .item1{
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-image: url("../../../../img/login-banner1.png");
+    }
+    .item2{
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-image: url("../../../../img/login-banner2.png");
+    }
+    .item3{
+      background-size: 80%;
+      background-repeat: no-repeat;
+      background-image: url("../../../../img/login-banner3.png");
+    }
+  }
+}

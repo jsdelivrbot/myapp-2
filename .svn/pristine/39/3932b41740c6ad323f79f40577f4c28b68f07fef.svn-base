@@ -1,0 +1,20 @@
+body {
+  color: @black;
+}
+
+p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input::-webkit-input-placeholder {
+  color: @gray2;
+}
+
+#root{
+  height: 100%;
+}
