@@ -1,0 +1,196 @@
+
+.login-screen-content{
+  background-image: url("../../../../img/login/background.png"); //主背景
+  div.logo-ic{
+    width: 1.44rem;
+    height: 1.44rem;
+    margin: 1.9rem auto 0;
+    background-image: url("../../../../img/login/logo_144_144.png");
+    background-size: 100%;
+  }
+  h1.login-title{ //登录页标题
+    width: 4.14rem;
+    height: .66rem;
+    font-size:.48rem;
+    color:#000;
+    line-height:.66rem;
+    text-align: center;
+    margin: .36rem auto 0;
+  }
+  .login-content{
+    box-sizing: border-box;
+    margin-top: .72rem;
+    width: 7.5rem;
+    min-height: 6rem;
+    //登录框通用样式
+    ul.login-ul{
+      width: 100%;
+      li{
+        position: relative;
+        width: 6.22rem;
+        height: .8rem;
+        border-radius: .16rem;
+        input{
+          box-sizing: border-box;
+          width: 100%;
+          height: 100%;
+          border-radius: .16rem;
+          background-color: #fff;
+          border: none;
+          padding-left: .362rem;
+        }
+        span{  //输入框右侧小按钮
+          position: absolute;
+          width: .28rem;
+          height: .28rem;
+          z-index: 100;
+          right: .3rem;
+          bottom: .26rem;
+          //line-height: .2rem;
+          //text-align: center;
+          //border-radius: 50%;
+          //color: #f7f7f7;
+          //background-color: #b5b5b5;
+        }
+        span.tel-ic{
+          background-image: url("../../../../img/login/signin_delete.png");
+          background-size: 100%;
+        }
+        span.pw-ic{
+          width: .32rem;
+          height: .16rem;
+          right: .26rem;
+          bottom: .32rem;
+          background-image: url("../../../../img/login/signin_hide.png");
+          background-size: 100%;
+        }
+        p{
+          position: absolute;
+          right: .5rem;
+          bottom: .25rem;
+          height: .3rem;
+          width: 3rem;
+          color: #e4393c;
+          font-size: .14rem;
+          line-height: .3rem;
+        }
+      }
+      li:first-child{
+        margin: 0 auto;
+      }
+      li:last-child{
+        margin: .44rem auto 0;
+      }
+    }
+    div.sign-btn{
+      position: relative;
+      width: 6.02rem;
+      height: .34rem;
+      margin:.2rem auto 0;
+      line-height: .34rem;
+      a{
+        font-size: .24rem;
+        color: #353535;
+      }
+      a.sign-new{
+        position: absolute;
+        z-index: 10;
+        right: 0;
+      }
+    }
+    div.btn-login-container{
+      margin-top: .72rem;
+      width: 7.5rem;
+      min-height: 1rem;
+      .btn-login{
+        display: block;
+        width: 6.22rem;
+        height: .8rem;
+        margin:0 auto;
+        border-radius: .16rem;
+        border:none;
+        line-height: .8rem;
+        text-align: center;
+        background-color: #81D8D0;
+        color: #fff;
+        font-size: .3rem;
+      }
+    }
+  }
+  //注册页样式重写
+  h1.sign-title{
+    margin-top: 2.68rem;
+  }
+  div.sign-content{
+    margin-top: .9rem;
+    padding: 0;
+    ul.login-ul{
+      li:last-child{
+        margin-top: .3rem;
+      }
+      li.code-ct{
+        margin: .3rem auto 0;
+        span.codeGet{
+          background-color: #fff;
+          font-size: .22rem;
+          color: #353535;
+          width: 1.2rem;
+          height: .32rem;
+          line-height: .32rem;
+        }
+      }
+    }
+    p.user-read{
+      width: 5.5rem;
+      height: .34rem;
+      margin: .22rem 0 0 .68rem;
+      font-size: .24rem;
+      line-height: .34rem;
+      color: #757575;
+      a{
+        font-size: .24rem;
+        color: #188c7c;
+      }
+    }
+  }
+  //学校选择页样式重写
+  div.sign-content{
+    ul{
+      li{
+        span.select-school{
+          width: .3rem;
+          height: .18rem;
+          bottom: .31rem;
+          background-image: url("../../../../img/login/down_arrow.png");
+          background-size: 100%;
+        }
+      }
+      li:first-child{
+        ul.list-school{
+          position: absolute;
+          width: 100%;
+          height: 0;
+          z-index: 200;
+          background-color: #fff;
+          right: 0;
+          top: .7rem;
+          transition: all .2s linear;
+          overflow: auto;
+          li{
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: .8rem;
+            text-align: center;
+            line-height: .8rem;
+            color: #79797f;
+            font-size: .36rem;
+          }
+        }
+        ul.openXwy{
+          height: 3.2rem;
+        }
+      }
+    }
+  }
+}

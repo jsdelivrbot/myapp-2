@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {Panel} from 'framework7-react';
 import Actions from '../../../actions';
+import Swipeout from '../../common/list';
 
 export default class HomeMessage extends Component{
   render () {
@@ -15,6 +16,9 @@ export default class HomeMessage extends Component{
         </Panel>
 
         <div className='page-content'>
+
+          <Swipeout/>
+
           <p><a href="" className="back button button-fill fs-18 cl-white bg-bluegreen link">back</a></p>
           <div className="content-block">
             <p><a href="#" className="open-panel">Open Left Panel</a></p>
@@ -27,9 +31,16 @@ export default class HomeMessage extends Component{
           <div>
             {Actions.dateC(1280977330)}
           </div>
+          <div>
+            {Actions.dateC(1510729261)}
+          </div>
+          <div>
+            {Actions.dateC(1508050861)}
+          </div>
 
           <h1>
             this is a title !
+            {Actions.dateC(1510731869)}
           </h1>
           <h3>
             this is a title

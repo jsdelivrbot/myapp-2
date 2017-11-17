@@ -1,0 +1,42 @@
+import React, { Component } from 'react';
+import {Panel} from 'framework7-react';
+import Actions from '../../../actions';
+
+export default class HomeMessage extends Component{
+  render () {
+    return (
+      <div className='page' data-page='message'>
+        <Panel left layout="dark">left content
+          <p><a href="" data-panel="right" className="open-panel">open right panel</a></p>
+        </Panel>
+
+        <Panel right layout="dark">right content
+          <p><a href="" className="open-panel">open left panel</a></p>
+        </Panel>
+
+        <div className='page-content'>
+          <p><a href="" className="back button button-fill fs-18 cl-white bg-bluegreen link">back</a></p>
+          <div className="content-block">
+            <p><a href="#" className="open-panel">Open Left Panel</a></p>
+            <p><a href="#" data-panel="right" className="open-panel">Open Right Panel</a></p>
+          </div>
+
+          <div>
+            {Actions.dateC()}
+          </div>
+          <div>
+            {Actions.dateC(1280977330)}
+          </div>
+
+          <h1>
+            this is a title !
+            {Actions.dateC(1510731869)}
+          </h1>
+          <h3>
+            this is a title
+          </h3>
+        </div>
+      </div>
+    );
+  }
+}

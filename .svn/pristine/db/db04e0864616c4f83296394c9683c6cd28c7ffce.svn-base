@@ -1,0 +1,17 @@
+import React from 'react';
+
+const Header = () => (
+	<div className='navbar'>
+		<div className='navbar-inner'>
+			<div className='left'>
+				<a href='#' className='link'>Left Link</a>
+			</div>
+			<div className='center' style={{ fontWeight: 'inherit' }}>浙江传媒学院</div>
+			<div className='right'>
+				<a href='#' className='link'>right Link</a>
+			</div>
+		</div>
+    </div>
+)
+
+export default Header;

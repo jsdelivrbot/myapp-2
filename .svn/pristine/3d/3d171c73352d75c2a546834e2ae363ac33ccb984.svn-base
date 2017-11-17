@@ -1,0 +1,21 @@
+body{
+	color: #222;
+	font-size: 0.34rem;
+}
+
+p, ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+input::-webkit-input-placeholder {
+  color: @gray2;
+}
+
+#root{
+  height: 100%;
+}
