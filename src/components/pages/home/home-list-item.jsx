@@ -1,33 +1,12 @@
-import React, {Component} from 'react';
+import React from 'react';
 
-export default class WpListItem extends Component {
+const WpListItem = (props) => (
+    <li className='wpListItem border1px'>
+        <a href={ props.link } title={ props.title } className='wpListItemLink wpPadding-lr'>
+            <p className='wpText'>{ props.title }</p>
+            <time className='wpTime'>{ props.after }</time>
+        </a>
+    </li>
+)
 
-	constructor (props) {
-        super(props)
-        this.state = {
-            active: false
-        }
-    }
-
-    isClick = () => {
-        this.setState({
-            active: true
-        })
-        window.setTimeout( () => {
-            this.setState({
-                active: false
-            })
-        }, 120)
-    }
-
-    render () {
-    	return (
-			<li className={`wpListItem wpPadding-lr border1px ${ this.state.active ? 'wpList-active' : '' }`}>
-		        <a href='#' title='' onClick={ this.isClick } >
-		            <p className='wpText'>{ this.props.text }</p>
-		            <time className='wpTime'>{ this.props.after }</time>
-		        </a>
-		    </li>
-		)
-    }
-};
+export default WpListItem;

@@ -7,8 +7,10 @@ class UserStore {
     tel: '',
     // email: '',
     school: '',
+    token:'',
+    tokenAccess:'',
     // clazz: '',
-    // number: '',
+    number: '', //教务号或者学号
     // small_avatar: '',
     // medium_avatar: '',
     // large_avatar: '',
@@ -34,7 +36,15 @@ class UserStore {
 
   @action changeIs=(is)=>{   //改变跳转页
     this.isSign.openSign=is;
-  }
+  };
+
+  @observable isF={  //保存是不是第一次绑定
+    first:false
+  };
+
+  @action changeF=(is)=>{   //改变跳转页
+    this.isF.first=is;
+  };
 }
 const userStore = new UserStore();
 

@@ -6,7 +6,7 @@ export default class Login extends Component{
   render() {
     return (
       <LoginScreen id='login-screen'>
-        <View>
+        <View className='view login-screen'>
           <Pages>
             <LoginPage/>
           </Pages>

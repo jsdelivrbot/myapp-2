@@ -1,0 +1,68 @@
+.wpMaskLayer{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, .4);
+}
+.wpConmfirm{
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	z-index: 9999;
+	transform: translate(-50%, -50%);
+
+	overflow: hidden;
+
+	width: 5rem;
+	background: #fff;
+	border-radius: 16px;
+}
+
+.wpConmfirmText{
+	position: relative;
+
+	padding: 0.4rem 0.8rem;
+
+	text-align: center;
+	line-height: 1.6;
+	font-size: 0.34rem;
+}
+
+.wpConmfirmDelete,
+.wpConmfirmCancel{
+	float: left;
+	display: block;
+	height: 1.0rem;
+	width: 50%;
+
+	line-height: 1.0rem;
+	text-align: center;
+
+	font-size: 0.3rem;
+	color: #119C8F ;
+}
+
+.wpConmfirmDelete{
+	position: relative;
+}
+.wpConmfirmDelete::after{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  content: '';
+  width: 1px;
+  background: #ebebeb;
+  transform: scaleX(.5);
+}
+.wpConmfirmDelete.active-state,
+.wpConmfirmCancel.active-state{
+	background: #ebebeb;
+}
+
+
+
+

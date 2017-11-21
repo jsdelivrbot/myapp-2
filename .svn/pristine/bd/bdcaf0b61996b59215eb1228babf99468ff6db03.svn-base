@@ -1,0 +1,129 @@
+.wpCampusForum{
+	margin: 0.2rem 0;
+}
+.wpHead{ 
+	display: block;
+	width: 0.84rem;
+	height: 0.84rem;
+	border-radius: 8px;
+	overflow: hidden;
+}
+.wpHead img{
+	width: 100%;
+	height: 100%;
+}
+.wpForumItem{
+	display: flex;
+	padding: 0.2rem;
+	position: relative;
+}
+.wpForumCentent{
+	flex: 0 1 100%;
+	padding-left: 0.2rem;
+	box-sizing: border-box;
+}
+.wpName{
+	line-height: 1.6;
+	font-size: 0.3rem;
+	color: #119C8F;
+}
+.wpForumTitle{
+	line-height: 2;
+	color: #000;
+}
+.wpForumText{
+	line-height: 1.6;
+	font-size: 0.3rem;
+	color: #353535;
+}
+.wpForumFunction{
+	line-height: 0.42rem;
+	margin: 0.05rem 0;
+}
+.wpTime{
+	font-size: 0.28rem;
+	color: #5b5b5d;
+}
+.wpDelete{
+	font-size: 0.26rem;
+	color: #E64340;
+}
+.wpLikes{
+	background: url('../../../img/like_normal.png') no-repeat left center;
+	background-size: 0.3rem 0.26rem;
+	padding-left: 0.37rem;
+}
+.wpLikes-on{
+	background-image: url('../../../img/like_selected.png');
+}
+
+.wpComment{
+	background: url('../../../img/home/chat.png') no-repeat left center;
+	background-size: 0.28rem 0.28rem;
+	padding-left: 0.35rem;
+}
+.wpForumFunction .wpLikes,
+.wpForumFunction .wpComment{
+	float: right;
+	font-size: 0.28rem;
+	color: #353535;
+}
+
+.wpCommentMes{
+	background: #ebebeb;
+	padding: 0.2rem;
+	font-size: 0.28rem;
+	line-height: 1.6;
+	word-break:break-all;
+}
+.wpMes{
+	margin-bottom: 0.05rem;
+}
+.wpMesName{
+	float: left;
+	color: #119C8F;
+}
+.wpMesTime{
+	float: right;
+	font-size: 0.24rem;
+}
+.wpMesText{
+	clear: both;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

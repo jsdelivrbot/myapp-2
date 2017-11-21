@@ -1,0 +1,69 @@
+.wpMaskLayer{
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 9999;
+	background: rgba(0, 0, 0, .4);
+}
+.wpShare{
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 10000;
+
+	height: 3.84rem;
+
+	background: #ededed;
+
+	animation: animation .3s ease-in;
+}
+@keyframes animation
+{
+	from {
+		transform: translateY(100%);
+	}
+	to {
+		transform: translateY(0);
+	}
+}
+
+.wpShareTitle{
+	padding: 0 0.38rem;
+	height: 1.1rem;
+	line-height: 1.1rem;
+	font-size: 0.22rem;
+	color: #8a8a8a;
+}
+
+.wpShareCenter{
+	display: flex;
+	height: calc(3.84rem - 2rem);
+	border-bottom: 1px solid #dadada;
+}
+.wpShareCenter a{
+	width: calc(100% / 3);
+	font-size: 0.22rem;
+	line-height: 1.6;
+	text-align: center;
+	color: #5a5a5a;
+}
+.wpShareCenter img{
+	width: 1.0rem;
+	height: 1.0rem;
+	display: block;
+	margin: 0 auto 0.12rem;
+}
+.wpShareCancel{
+	display: block;
+	height: 0.9rem;
+	line-height: 0.9rem;
+	text-align: center;
+	color: #5a5a5a;
+	font-size: 0.34rem;
+}
+.wpShareCancel.active-state{
+	background: #dadada;
+}
